@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.AppHost", "src\aspire\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.ServiceDefaults", "src\aspire\Demo.ServiceDefaults\Demo.ServiceDefaults.csproj", "{0702E82B-47AF-4F54-F793-CD6479C76550}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aspire-Tests", "test\Aspire-Tests\Aspire-Tests.csproj", "{99445339-D761-4628-80C5-94C7AE1CAC5E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,8 +57,23 @@ Global
 		{0702E82B-47AF-4F54-F793-CD6479C76550}.Release|x64.Build.0 = Release|Any CPU
 		{0702E82B-47AF-4F54-F793-CD6479C76550}.Release|x86.ActiveCfg = Release|Any CPU
 		{0702E82B-47AF-4F54-F793-CD6479C76550}.Release|x86.Build.0 = Release|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Debug|x64.Build.0 = Debug|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Debug|x86.Build.0 = Debug|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Release|x64.ActiveCfg = Release|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Release|x64.Build.0 = Release|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Release|x86.ActiveCfg = Release|Any CPU
+		{99445339-D761-4628-80C5-94C7AE1CAC5E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C4E2FA7-0E36-4479-BE9B-BE5E55665A06}
 	EndGlobalSection
 EndGlobal
