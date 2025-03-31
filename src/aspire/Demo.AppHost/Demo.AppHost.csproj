@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\DemoServer\DemoServer.csproj" />
+    <ProjectReference Include="..\..\frontend\frontend\frontend.csproj" />
   </ItemGroup>
 
 </Project>
