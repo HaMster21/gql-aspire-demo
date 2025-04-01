@@ -1,8 +1,8 @@
-namespace DemoServer.Types;
+﻿namespace DemoServer.Types;
 
 [QueryType]
-public static class Query
+public class Query
 {
-    public static Book GetBook()
-        => new Book("C# in depth.", new Author("Jon Skeet"));
+    public async Task<Book?> GetBookAsync(int bookId, CatalogDbContext dbContext)
+        => await dbContext.Books.FindAsync(bookId);
 }

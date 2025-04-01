@@ -1,7 +1,14 @@
-var builder = DistributedApplication.CreateBuilder(args);
+﻿var builder = DistributedApplication.CreateBuilder(args);
 
-builder.AddProject<Projects.DemoServer>("demoserver");
+var db = builder
+    .AddSqlServer("sql")
+    .AddDatabase("library");
 
-builder.AddProject<Projects.frontend>("frontend");
+var backend = builder
+    .AddProject<Projects.DemoServer>("demoserver")
+    .WithReference(db)
+    .WaitFor(db);
+
+var frontend = builder.AddProject<Projects.frontend>("frontend");
 
 builder.Build().Run();

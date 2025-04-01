@@ -1,3 +1,9 @@
-namespace DemoServer.Types;
+﻿namespace DemoServer.Types;
 
-public record Book(string Title, Author Author);
+public class Book
+{
+    public int Id { get; set; }
+    public string Title { get; set; }
+    public int AuthorId { get; set; }
+    public Author Author { get; set; }
+}
